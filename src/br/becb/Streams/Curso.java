@@ -1,5 +1,8 @@
 package br.becb.Streams;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Curso {
 
 	private String nome;
@@ -23,5 +26,17 @@ public class Curso {
 	}
 	public void setAlunos(int alunos) {
 		this.alunos = alunos;
+	}
+	
+	public static List<Curso> getCursos(){
+		
+		List<Curso> cursos = new ArrayList<Curso>();
+		cursos.add(new Curso("Python",45));
+		cursos.add(new Curso("javaScript",150));
+		cursos.add(new Curso("Java 8",113));
+		cursos.add(new Curso("Moda",500));
+		cursos.add(new Curso("C",55));
+		
+		return cursos;
 	}
 }

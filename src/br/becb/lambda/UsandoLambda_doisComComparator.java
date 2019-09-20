@@ -45,7 +45,11 @@ public class UsandoLambda_doisComComparator {
 		//não precisa mandar o tipo de dado
 			System.out.println("\nPor lambda 2");
 			palavras = pegaString();			
-			palavras.sort(( o1,  o2) -> Integer.compare(o1.length(), o2.length()));				
+			palavras.sort( ( o1,  o2) -> Integer.compare(o1.length(), o2.length()));
+			
+			
+			
+			
 			palavras.forEach(s-> System.out.println(s));
 		
 			//Abaixo 2 linhas que seria somente 1
